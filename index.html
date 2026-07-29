@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Sheet — Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="masthead">
+    <p class="roll-id">ROLL NO. 24 — CODEALPHA</p>
+    <h1>Contact Sheet</h1>
+    <p class="subtitle">A frame-by-frame gallery, developed in HTML &amp; CSS.</p>
+  </header>
+
+  <nav class="filters" id="filters">
+    <button class="filter-btn active" data-category="all">All Frames</button>
+    <button class="filter-btn" data-category="nature">Nature</button>
+    <button class="filter-btn" data-category="city">City</button>
+    <button class="filter-btn" data-category="people">People</button>
+  </nav>
+
+  <main class="sheet" id="gallery">
+    <!-- Frames injected by JS -->
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#10094;</button>
+    <img class="lb-img" id="lbImage" src="" alt="">
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#10095;</button>
+    <p class="lb-caption" id="lbCaption"></p>
+    <p class="lb-counter" id="lbCounter"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
